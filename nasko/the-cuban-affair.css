@@ -1,0 +1,239 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EDF3F4;
+    font-size: 18px;
+    font-family: 'Montserrat', serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+main {
+    margin: 100px auto;
+    width: 70%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 60px;
+    background-color: #fff;
+}
+
+.book-details {
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 60px;
+}
+
+.book-details figure {
+    width: 370px;
+    display: inline-block;
+}
+
+.book-details figure img {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.book-details article {
+    position: relative;
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 30px 0 50px;
+}
+
+.book-details article h2 {
+    letter-spacing: 1px;
+    font-size: 48px;
+
+}
+
+.book-details article span > i {
+    font-size: 20px;
+}
+
+.book-details article > h6 {
+    font-weight: normal;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.book-details article span + span {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.book-details article > p {
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.book-details article > p a {
+    color: lightcoral;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.book-details article > p a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.book-details article p > span {
+    color: #000;
+    font-weight: normal;
+}
+
+.book-details .praise {
+    font-size: 20px;
+    margin: 25px 0 40px 0;
+    text-align: justify;
+}
+
+.book-details .praise .quote {
+    margin-top: 10px;
+    color: #494949;
+}
+
+.book-details .praise .source {
+    padding: 5px 0;
+    color: lightslategray;
+    font-style: italic;
+}
+
+.buy-box {
+    width: 55%;
+    display: inline-block;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    position: relative;
+    bottom: 0;
+    left: 5%;
+}
+
+.buy-box h4 {
+    background-color: #EDF3F4;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.buy-box form {
+    padding: 35px 15px;
+    text-align: center;
+}
+
+.buy-box form input {
+    box-sizing: border-box;
+    padding: 8px;
+    height: 50px;
+    width: 65px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    outline: none;
+    font-size: 22px;
+}
+
+.buy-box form button {
+    margin: 0 15px;
+    background-color: #2F2B35;
+    border: none;
+    border-radius: 35px;
+    width: 60%;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 55px;
+    outline: none;
+}
+
+.buy-box form button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3px 3px gray;
+    color: lightgray;
+}
+
+.about-the-book {
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 40px;
+}
+
+.author, .about-the-book {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.author p, .about-the-book p {
+    margin: 15px 0;
+    color: #757575;
+}
+
+.author h3, .about-the-book h3 {
+    padding: 30px 0 20px 0;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.author figure {
+    width: 23%;
+    float: right;
+    padding: 10px 0 10px 30px;
+}
+
+.author img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.details {
+    width: 45%;
+    float: left;
+}
+
+.summary {
+    width: 55%;
+    display: inline-block;
+}
+
+.details table {
+    color: #757575;
+    font-size: 20px;
+    border-spacing: 0;
+    margin-top: 20px;
+    border-top: 1px solid gainsboro;
+    outline: none;
+    align-content: flex-start;
+}
+
+.details tr:nth-child(odd) > td {
+    background-color: #F9F9F9;
+}
+
+.details td {
+    height: 50px;
+    width: 230px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.details tr > td:first-child {
+    font-weight: 500;
+}
+
+.details td + td {
+    font-style: italic;
+}
