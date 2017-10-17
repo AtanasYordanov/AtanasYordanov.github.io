@@ -1,1 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    width:100%;
+    font-family:'Montserrat', sans-serif;
+    font-size:16px;
+    background-image: url("images/book-background.jpg");
+}
+
+nav {
+    margin-top: 45px;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+}
+
+nav p.brand {
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 90px; 
+    cursor: pointer;
+}
+
+nav ul.nav-primary {
+    float: right;
+    margin-right: 120px;
+}
+
+nav ul.nav-primary li {  
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+    text-transform: uppercase;
+    padding: 18px 0px 5px 0px;        
+}
+
+nav ul.nav-primary li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul.nav-primary li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #70e9ff;   
+}
+ 
+header {
+    text-align: center;
+}
+
+h1.header-title {
+    text-transform: capitalize;
+    font-weight: 100;
+    margin-top: 210px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+h3.header-subtitle {
+    text-align: center;
+    font-weight: 100;
+    color: #ffffff;   
+}
