@@ -16,30 +16,30 @@ body {
     content: "";
     display: block;
     clear: both;
-
 }
 
 main {
     margin: 100px auto;
-    width: 70%;
+    width: 1300px;
     border-radius: 20px;
     box-sizing: border-box;
-    padding: 60px;
+    padding: 50px;
     background-color: #fff;
 }
 
 .book-details {
     border-bottom: 1px solid gainsboro;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .book-details figure {
-    width: 370px;
+    width: 31%;
     display: inline-block;
 }
 
 .book-details figure img {
     width: 100%;
+	min-width: 220px;
     border-radius: 5px;
 
 }
@@ -49,7 +49,8 @@ main {
     width: 60%;
     display: inline-block;
     vertical-align: top;
-    padding: 0 30px 0 50px;
+    padding-left:  50px;
+
 }
 
 .book-details article h2 {
@@ -114,7 +115,7 @@ main {
 }
 
 .buy-box {
-    width: 55%;
+    width: 380px;
     display: inline-block;
     border: 1px solid gainsboro;
     border-radius: 10px;
@@ -196,7 +197,6 @@ main {
 }
 
 .author img {
-    border-radius: 50%;
     width: 100%;
 }
 
@@ -232,6 +232,7 @@ main {
 
 .details tr > td:first-child {
     font-weight: 500;
+	padding-left: 10px;
 }
 
 .details td + td {
