@@ -3,34 +3,144 @@
     <head>
         <meta charset="UTF-8">
         <title>Book Store</title>
-        <link rel="stylesheet" href="css/front-page-styles.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     <body>
-        <div class="first-container">
-            <nav>
-                <p class="brand">Book's Gate &trade;</p>
-                <ul class="nav-primary">
-                    <li class="nav-item"><a href="#">home</a></li>
-                    <li class="nav-item"><a href="#">bookstore</a></li>
-                    <li class="nav-item button-cta"><a href="#">blog</a></li>
-                    <li class="nav-item button-cta"><a href="#">my account</a></li>
-                    <li class="nav-item button-cta"><a href="#">contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <p class="brand">Book's Gate &trade;</p>
+            <ul class="nav-primary">
+                <li class="nav-item"><a href="#">home</a></li>
+                <li class="nav-item"><a href="#">bookstore</a></li>
+                <li class="nav-item button-cta"><a href="#">blog</a></li>
+                <li class="nav-item button-cta"><a href="#">my account</a></li>
+                <li class="nav-item button-cta"><a href="#">contact</a></li>
+            </ul>
+        </nav>
 
-            <header>
-                <h1 class="header-title">
-                    "A room without books is like a body without a soul."
-                </h1>
+        <header>
+            <h1 class="header-title">
+                "A room without books is like a body without a soul."
+            </h1>
             
-                <h3 class="header-subtitle">
-                    Marcus Tullius Cicero
-                </h3>
-            </header>
+            <h3 class="header-subtitle">
+                Marcus Tullius Cicero
+            </h3>
+        </header>
 
+        <main>
+            <div class="books-search">
+                <div class="container">
+                    <div class="books-group">
+                        <input name="s" value="" type="text" class="tipes-control" id="keyword" placeholder="Book Title">
+                    </div>
+    
+                    <div class="books-group">
+                        <select  name='books-tipes' class='tipes-control' >
+                            <option value='0'>Book Category</option>
+                            <option class="level-0" value="drama">Drama</option>
+                            <option class="level-1" value="inspiration">&nbsp;&nbsp;&nbsp;Inspiration</option>
+                            <option class="level-1" value="love-story">&nbsp;&nbsp;&nbsp;Love Story</option>
+                            <option class="level-0" value="life-style">Life Style</option>
+                            <option class="level-1" value="business">&nbsp;&nbsp;&nbsp;Business</option>
+                            <option class="level-1" value="culture">&nbsp;&nbsp;&nbsp;Culture</option>
+                            <option class="level-0" value="science">Science</option>
+                        </select>
+                        <i class='select-arrow fa fa-angle-down'></i>
+                    </div>
+                                    
+                    <div class="books-group">
+                        <select  name='book_author' id='book_author' class='tipes-control' >
+                            <option value='0'>Book Author</option>
+                            <option class="level-0" value="atkia">Atkia</option>
+                            <option class="level-0" value="brian-owell">Brian O&#8217;Well</option>
+                            <option class="level-0" value="saifudin-a">Saifudin A.</option>
+                            <option class="level-0" value="sarfaraz">Sarfaraz</option>
+                        </select>
+                        <i class='select-arrow fa fa-angle-down'></i>
+                    </div>
+                                
+                    <div class="books-group">
+                        <input type="hidden" name="post_type" value="product"/>
+                        <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fa fa-search"></i> &nbsp; 
+                            Find Book 
+                        </button>
+                    </div>
+                </div>
+            </div>   
+            
+            <section class="main-books">
+                <h2>popular books</h2>
+                <div class="articles-container">
+                    <article>
+                        <img class="popular-books" src="images/anna-karenina.jpg"/>
+                        <h4 class="book-name">anna karenina</h4>
+                        <h5 class="book-author">tolstoy</h5>
+                        <button class="details"><a href="">details</a></button>
+                        <button class="buy"><a href="">buy</a></button>
+                    </article>
 
+                    <article>
+                        <img class="popular-books" src="images/gatsby.jpg"/>
+                        <h4 class="book-name">the great gatsby</h4>
+                        <h5 class="book-author">fitzgerald</h5>
+                        <button class="details"><a href="">details</a></button>
+                        <button class="buy"><a href="">buy</a></button>
+                    </article>
 
+                    <article>
+                        <img class="popular-books" src="images/pulp-fiction.jpg"/>
+                        <h4 class="book-name">pulp fiction</h4>
+                        <h5 class="book-author">tarantino</h5>
+                        <button class="details"><a href="">details</a></button>
+                        <button class="buy"><a href="">buy</a></button>
+                    </article>
+
+                    <article>
+                        <img class="popular-books" src="images/the-cuban-affair.jpg"/>
+                        <h4 class="book-name">the cuban affair</h4>
+                        <h5 class="book-author">demile</h5>
+                        <button class="details"><a href="">details</a></button>
+                        <button class="buy"><a href="">buy</a></button>
+                    </article>
+                </div>
+    
+            </section>
+
+            <section class="browse-collection">
+                <h2>browse through our special collection of books</h2>
+                <h3><a href="#" class="collection">browse collection --></a></h3>
+            </section>
+
+            <div class="collection-info">
+                <section class="books-info">
+                    <img class="icon-one-size"src="images/open-book-icon.png"/>
+                    <h2>Tons of Books</h2>
+                    <p>
+                        Asdhhfuhsufygsyug fuygs uygfyusgf
+                        yugsfyugsu ygfusgfus gufgsugfuuugsfu.
+                    </p>
+                </section>
+
+                <section class="books-info">
+                    <img class="icon-one-size" src="images/icon-pencil.png"/>
+                    <h2>Hundreds of Authors</h2>
+                    <p>
+                        Asdhhfuhsufygsyug fuygs uygfyusgf
+                        yugsfyugsu ygfusgfus gufgsugfuuugsfu.
+                    </p>
+                </section>
+
+                <section class="books-info">
+                    <img class="icon-one-size" src="images/icon-bookmarks.png"/>
+                    <h2>Easily Bookmarked</h2>
+                    <p>
+                        Asdhhfuhsufygsyug fuygs uygfyusgf
+                        yugsfyugsu ygfusgfus gufgsugfuuugsfu.
+                    </p>
+                </section>
+            <div>
+        </main>
     </body>
 </html>
