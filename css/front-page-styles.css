@@ -4,12 +4,12 @@
 }
 
 body {
-    width:100%;
+    width: 100%;
     font-family:'Montserrat', sans-serif;
-    font-size:16px;
+    font-size: 16px;
     background-image: url("../images/vintage-books.jpg");
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
 }
 
 a {
@@ -17,7 +17,7 @@ a {
     color:#000000;
 }
 
-nav {
+nav.top-nav {
     margin-top: 45px;
     color: #ffffff;
     width: 100%;
@@ -94,7 +94,7 @@ div.books-group {
     padding: 5px;
     width: 265px;
     border-radius: 5px;
-    border:none;
+    border: none;
     background: #eaf1fc;
     color:#6f737a;
 }
@@ -103,7 +103,7 @@ button.btn {
     padding: 5px;
     width: 265px;
     border-radius: 20px;
-    border:none;
+    border: none;
     background-color: #313335;
     color:#fafafa;
     text-transform: uppercase;
@@ -119,7 +119,6 @@ main {
 }
 
 section.main-books {
-    margin-top: 40px;
     text-align: center;
 }
 
@@ -128,19 +127,20 @@ section.main-books h2 {
     text-transform: capitalize;
     font-size: 36px;
     font-weight: lighter;
+    padding-top:30px;
 }
 
 div.articles-container {
-    width:100%;
-    margin-top:50px;
+    width: 100%;
+    margin-top: 50px;
     text-transform: capitalize;
     
 }
 
 div.articles-container article {
-    display:inline-block;
-    margin-left:10px;
-    border:1px solid #A6D0DE;
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #A6D0DE;
     border-radius: 10px;
     padding: 20px 20px 0px 20px;
     background-color: #fafafa;
@@ -196,21 +196,19 @@ article button.buy {
 
 article button.buy:hover {
     background-color:#a0aaba;
-    color:#ffffff;
+    cursor: pointer;
 }
 
 article button.details:hover {
     background-color:#a0aaba;
+    cursor: pointer;
+}
+
+article button.buy:hover a {
     color:#ffffff;
 }
 
-article button.buy a:hover {
-    background-color:#a0aaba;
-    color:#ffffff;
-}
-
-article button.details a:hover {
-    background-color:#a0aaba;
+article button.details:hover a {
     color:#ffffff;
 }
 
@@ -264,15 +262,151 @@ section.books-info {
 section img.icon-one-size {
     width: 25%;
     height: 80px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 section.books-info h2 {
-    margin-bottom:15px;
+    margin-bottom: 15px;
     font-weight: lighter;
 }
 
 section.books-info p {
     color:#6a6f77;
     line-height: 1.5;
+}
+
+section.feautured-book {
+    margin-top: 130px;
+    height: 630px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+div.best-book {
+    width: 90%;
+    margin: 0 auto;
+    text-transform: capitalize;
+    display: inline-block;  
+}
+
+div.best-book h1{
+    margin-bottom: 20px;
+    color: #c4cad3;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+div.best-book h2 {
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+div.best-book h3 {
+    font-size:14px;
+    color: #c4cad3;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+div.best-book article {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    line-height: 1.5;
+    margin-top: 60px;
+    text-align: left;
+    margin-right: 80px;
+}
+
+div.blog-container article {
+    width: 20%;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 20px 20px 0px 20px;  
+}
+
+img.book-front-cover{
+    width: 30%;
+    height: 431px;
+    display: inline-block;
+}
+
+button.read-more {
+    margin-top: 20px;
+    background-color: #313335;
+    line-height: 30px;
+    width: 30%;
+    border-radius: 20px;
+}
+
+button.read-more:hover {
+    background-color:#fafafa;
+    cursor: pointer;
+}
+
+button.read-more a {
+    color:#fafafa;
+    text-transform: uppercase;
+}
+
+button.read-more:hover a {
+    color: #222222;
+ }
+
+
+section.blog-section {
+    height: 600px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+section.blog-section h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: lighter;
+    padding-top: 40px;
+}
+
+div.blog-container {
+    width: 90%;
+    margin: 0 auto;
+    text-transform: capitalize;
+    
+}
+
+div.blog-container article {
+    width: 20%;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 20px 20px 0px 20px;  
+}
+
+article img.blog-books {
+    width: 100%;
+    height: 120px;
+}
+
+article h2.blog-theme {
+    margin: 10px 0 10px 0;
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: left;
+}
+
+article h3.blog-date {
+    margin: 0 0 20px 0;
+    font-weight: lighter;
+    font-size: 15px;
+    color:#c4cad3;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+article p {
+    text-align: left;
+    font-weight: lighter;
+    font-size: 14px;
+    box-shadow: 0 0 black;
+    margin-top: 30px;
 }
