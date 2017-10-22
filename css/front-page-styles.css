@@ -353,9 +353,11 @@ button.read-more:hover a {
 
 
 section.blog-section {
-    height: 600px;
+    height: 520px;
     text-align: center;
     background-color: #fafafa;
+    border-top: 2px dashed #EBEBEB;
+    border-bottom: 2px dashed #EBEBEB;
 }
 
 section.blog-section h1 {
@@ -412,6 +414,7 @@ section.books-discount {
     width: 100%;
     height: 230px;
     text-align: center;
+    padding-top: 88px;
 }
 
 footer {
