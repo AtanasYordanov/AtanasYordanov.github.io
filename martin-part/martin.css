@@ -1,0 +1,89 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+#blog{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+}
+
+.blog-name-page{
+    background-color: #515570;
+    margin: 0;
+}
+
+.blog-name-page>h1{
+    margin-top: 0;
+    padding-top: 20px;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+    font-size: 5em;
+}
+
+.blog-name-page>p{
+    margin-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-size: 2em;
+}
+
+.blog-name-page>p>a{
+    text-decoration: none;
+    color: white;
+}
+
+.blog-name-page>p>a:hover{
+    color: #91d2ff;
+}
+
+.blog-search{
+    background-color: white;
+    padding: 15px 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-search>form{
+    margin: auto;
+    max-width: 90%;
+}
+
+.blog-search>form>input,
+.blog-search>form>select{
+    background-color: #f3f3f3;
+    width: 250px;
+    margin-right: 50px;
+    padding: 5px 10px;
+    color: #646464;
+    border: none;
+}
+
+.blog-search>form>input:focus,
+.blog-search>form>select:focus{
+    outline: none;
+}
+
+
+.btn-find-book{
+    padding: 7px 50px;
+    background-color: black;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.btn-find-book:before{
+    font-family: FontAwesome, serif;
+    content: "\f002";
+    margin-right: 10px;
+}
