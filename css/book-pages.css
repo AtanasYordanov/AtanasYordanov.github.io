@@ -6,27 +6,16 @@
     padding: 0;
 }
 
-html {
-    width: 100%
-}
-
 body {
     width: 100%;
     background-color: #B8D0D4;
     font-family: 'Montserrat', serif;
 }
 
-.clearfix:after {
-    font-size: 23px;
-    content: "";
-    display: block;
-    clear: both;
-}
-
 main {
     font-size: 23px;
     margin: 100px auto;
-    width: 95%;
+    width: 97%;
     max-width: 1300px;
     border-radius: 20px;
     box-sizing: border-box;
@@ -48,7 +37,6 @@ main {
 
 .book-details figure img {
     width: 100%;
-    min-width: 190px;
     border-radius: 5px;
     box-shadow: 2px 3px 10px 3px lightslategray;
 }
@@ -87,14 +75,15 @@ main {
 
 .book-details article > p {
     padding: 5px 0;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: bold;
+    font-style: italic;
 }
 
 .book-details article > p a {
     color: lightcoral;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .book-details article > p a:hover {
@@ -159,6 +148,9 @@ main {
     outline: none;
     font-size: 1em;
 }
+.buy-box form button i {
+    font-size: 1.6em;
+}
 
 .buy-box form button {
     margin: 0 0.7em;
@@ -168,7 +160,7 @@ main {
     width: 60%;
     color: #fff;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.7em;
     letter-spacing: 1px;
     line-height: 3em;
     outline: none;
@@ -294,11 +286,29 @@ main {
         font-size: 1.7em;
         margin-bottom: 0.2em;
     }
+    .details, .summary, .author {
+        display: block;
+        margin: 1.5em auto;
+        width: 98%;
+    }
 
+    .details table {
+        margin: 0 auto;
+    }
+
+    .details table td {
+        width: 30%;
+    }
+    .about-the-book h3, .author h3 {
+        text-align: center;
+        padding: 0 0 0.6em 0;
+    }
     .quote {
         padding-top: 0.3em;
     }
-
+    .buy-box form button {
+        width: 50%;
+    }
     .author figure {
         width: 250px;
         float: right;
@@ -325,20 +335,6 @@ main {
 
     .book-details article h2 {
         font-size: 1.6em;
-    }
-
-    .details, .summary, .author {
-        display: block;
-        margin: 2em auto;
-        width: 98%;
-    }
-
-    .details table {
-        margin: 0 auto;
-    }
-
-    .details table td {
-        width: 30%;
     }
 
     .details tr > td:first-child {
@@ -387,7 +383,6 @@ main {
         padding: 0.8em 0.3em;
         text-align: center;
     }
-
     .book-details {
         height: auto;
     }
@@ -411,7 +406,7 @@ main {
 
     .details, .summary, .author {
         display: block;
-        margin: 2em auto;
+        margin: 1em auto;
         width: 98%;
     }
 
@@ -444,7 +439,7 @@ main {
 
 @media screen and (max-width: 319px) {
     .buy-box > form > button {
-        width: 80%;
+        width: 90%;
         font-size: 0.8em;
     }
 
