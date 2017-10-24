@@ -87,3 +87,76 @@ header{
     content: "\f002";
     margin-right: 10px;
 }
+
+#main-blog{
+    background-color: #e7e7e7;
+    padding: 50px 100px;
+    height: 100%;
+}
+
+#main-blog>.container{
+    width: 90%;
+    margin: auto;
+}
+
+.articles{
+    display: inline-block;
+}
+
+#main-blog>div>div>article{
+    max-width: 650px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    padding:45px 50px 25px 50px;
+    box-sizing: border-box;
+}
+
+article>time{
+    color: #a7a7a7;
+}
+
+article>h2{
+    margin: 0 0 5px;
+    padding: 0;
+    color: #222222;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.35;
+    text-transform: capitalize;
+}
+
+.posted-by{
+    font-size: 13px;
+    font-style: italic;
+    display: block;
+    color: #757575;
+}
+
+article>figure{
+    margin: 0;
+    margin-top: 35px;
+    background: #f5f5f5;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.article-image{
+    width: 100%;
+}
+
+.article-content>p{
+    font-family: "Montserrat", sans-serif;
+    color: #757575;
+    margin-bottom: 30px;
+    line-height: 1.2em;
+}
+
+#asside-blog{
+    padding-left: 20px;
+    display: inline-block;
+    float: right;
+    min-width: 340px;
+}
