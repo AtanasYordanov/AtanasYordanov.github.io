@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />        
         <title>Book Store</title>
-        <link rel="stylesheet" href="css/front-page-styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="css/front-page-styles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
     </head>
     <body>
-
-        <nav class="top-nav">
-            <p class="brand">Book's Gate &trade;</p>
-            <ul class="nav-primary">
-                <li class="nav-item"><a href="#">home</a></li>
-                <li class="nav-item"><a href="#">bookstore</a></li>
-                <li class="nav-item button-cta"><a href="#">blog</a></li>
-                <li class="nav-item button-cta"><a href="#">my account</a></li>
-                <li class="nav-item button-cta"><a href="#">contact</a></li>
-            </ul>
-        </nav>
-
-        <header>
-            <h1 class="header-title">
-                "A room without books is like a body without a soul."
-            </h1>
-            
-            <h3 class="header-subtitle">
-                Marcus Tullius Cicero
-            </h3>
-        </header>
+        <div class="header-background">
+            <nav class="top-nav">
+                <p class="brand">Book's Gate &trade;</p>
+                <ul class="nav-primary">
+                    <li class="nav-item"><a href="#">home</a></li>
+                    <li class="nav-item"><a href="#">bookstore</a></li>
+                    <li class="nav-item"><a href="#">blog</a></li>
+                    <li class="nav-item"><a href="#">my account</a></li>
+                    <li class="nav-item"><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <header>
+                <h1 class="header-title">
+                    "A room without books is like a body without a soul."
+                </h1>
+                
+                <h3 class="header-subtitle">
+                    Marcus Tullius Cicero
+                </h3>
+            </header>
+        </div>
 
         <main>
             <div class="books-search">
@@ -62,7 +63,7 @@
                     </div>
                                 
                     <div class="books-group">
-                        <input type="hidden" name="post_type" value="product"/>
+                        <input type="hidden" name="post_type" value="product" />
                         <button type="submit" class="btn btn-primary btn-block">
                         <i class="fa fa-search"></i> &nbsp; 
                             Find Book 
@@ -75,7 +76,7 @@
                 <h2>popular books</h2>
                 <div class="articles-container">
                     <article>
-                        <img class="popular-books" src="images/anna-karenina.jpg"/>
+                        <img class="popular-books" src="images/anna-karenina.jpg" />
                         <h4 class="book-name">anna karenina</h4>
                         <h5 class="book-author">tolstoy</h5>
                         <button class="details"><a href="">details</a></button>
@@ -83,7 +84,7 @@
                     </article>
 
                     <article>
-                        <img class="popular-books" src="images/gatsby.jpg"/>
+                        <img class="popular-books" src="images/gatsby.jpg" />
                         <h4 class="book-name">the great gatsby</h4>
                         <h5 class="book-author">fitzgerald</h5>
                         <button class="details"><a href="">details</a></button>
@@ -91,7 +92,7 @@
                     </article>
 
                     <article>
-                        <img class="popular-books" src="images/pulp-fiction.jpg"/>
+                        <img class="popular-books" src="images/pulp-fiction.jpg" />
                         <h4 class="book-name">pulp fiction</h4>
                         <h5 class="book-author">tarantino</h5>
                         <button class="details"><a href="">details</a></button>
@@ -99,7 +100,7 @@
                     </article>
 
                     <article>
-                        <img class="popular-books" src="images/the-cuban-affair.jpg"/>
+                        <img class="popular-books" src="images/the-cuban-affair.jpg" />
                         <h4 class="book-name">the cuban affair</h4>
                         <h5 class="book-author">demile</h5>
                         <button class="details"><a href="">details</a></button>
@@ -114,32 +115,34 @@
                     <h3><a href="#" class="collection">browse collection --></a></h3>
                 </section>
 
-                <section class="books-info">
-                    <img class="icon-one-size"src="images/open-book-icon.png"/>
-                    <h2>Tons of Books</h2>
-                    <p>
-                        Asdhhfuhsufygsyug fuygs uygfyusgf
-                        yugsfyugsu ygfusgfus gufgsugfuuugsfu.
-                    </p>
-                </section>
+				<section class="books-info-section">
+					<section class="books-info">
+						<img class="icon-one-size"src="images/open-book-icon.png" />
+						<h2>Tons of Books</h2>
+						<p>
+							Asdhhfuhsufygsyug fuygs uygfyusgf
+							yugsfyugsu ygfusgfus gufgsugfuuugsfu.
+						</p>
+					</section>
 
-                <section class="books-info">
-                    <img class="icon-one-size" src="images/icon-pencil.png"/>
-                    <h2>Hundreds of Authors</h2>
-                    <p>
-                        Asdhhfuhsufygsyug fuygs uygfyusgf
-                        yugsfyugsu ygfusgfus gufgsugfuuugsfu.
-                    </p>
-                </section>
+					<section class="books-info">
+						<img class="icon-one-size" src="images/icon-pencil.png" />
+						<h2>Hundreds of Authors</h2>
+						<p>
+							Asdhhfuhsufygsyug fuygs uygfyusgf
+							yugsfyugsu ygfusgfus gufgsugfuuugsfu.
+						</p>
+					</section>
 
-                <section class="books-info">
-                    <img class="icon-one-size" src="images/icon-bookmarks.png"/>
-                    <h2>Easily Bookmarked</h2>
-                    <p>
-                        Asdhhfuhsufygsyug fuygs uygfyusgf
-                        yugsfyugsu ygfusgfus gufgsugfuuugsfu.
-                    </p>
-                </section>
+					<section class="books-info">
+						<img class="icon-one-size" src="images/icon-bookmarks.png" />
+						<h2>Easily Bookmarked</h2>
+						<p>
+							Asdhhfuhsufygsyug fuygs uygfyusgf
+							yugsfyugsu ygfusgfus gufgsugfuuugsfu.
+						</p>
+					</section>															
+				</section>
 
                 <section class="feautured-book">
                         <div class="best-book">
@@ -154,7 +157,9 @@
                                 </p>
                                 <button class="read-more"><a>read more</a></button>
                             </article>
-                            <img class="book-front-cover" src="images/best-book.jpg"/>
+							<article class="image-container">
+								<img class="book-front-cover" src="images/best-book.jpg" />
+							</article>
                         </div>
                 </section>
 
@@ -162,7 +167,7 @@
                     <h1>from our blog</h1>
                     <div class="blog-container">
                         <article>
-                            <img class="blog-books" src="images/books.jpg"/>
+                            <img class="blog-books" src="images/books.jpg" />
                             <h2 class="blog-theme"><a href="#">bloging tips and how you</a></h2>
                             <h3 class="blog-date">june 17, 2017</h3>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ....
@@ -170,7 +175,7 @@
                         </article>
     
                         <article>
-                            <img class="blog-books" src="images/lap-books.jpg"/>
+                            <img class="blog-books" src="images/lap-books.jpg" />
                             <h2 class="blog-theme"><a href="#">bloging tips and how you</a></h2>
                             <h3 class="blog-date">july 23, 2017</h3>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ....
@@ -178,7 +183,7 @@
                         </article>
     
                         <article>
-                            <img class="blog-books" src="images/books.png"/>
+                            <img class="blog-books" src="images/books.png" />
                             <h2 class="blog-theme"><a href="#">bloging tips and how you</a></h2>
                             <h3 class="blog-date">august 24, 2017</h3>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ....
@@ -186,7 +191,7 @@
                         </article>
     
                         <article>
-                            <img class="blog-books" src="images/books-blog.jpg"/>
+                            <img class="blog-books" src="images/books-blog.jpg" />
                             <h2 class="blog-theme"><a href="#">bloging tips and how you</a></h2>
                             <h3 class="blog-date">october 30, 2017</h3>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ....
@@ -197,7 +202,7 @@
                 </section>
                 
                 <section class="books-discount">
-                    <img src="images/book-sale.jpg"/>
+                    <img src="images/book-sale.jpg" />
                 </section>
 
         </main>
