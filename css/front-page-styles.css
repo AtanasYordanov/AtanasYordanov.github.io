@@ -4,17 +4,22 @@
 }
 
 body {
-    width: 100%;
     font-family:'Montserrat', sans-serif;
     font-size: 16px;
-    background-image: url("../images/vintage-books.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 a {
     text-decoration:none;
     color:#000000;
+}
+
+div.header-background {
+    width: 100%;
+    height: 850px;
+    display:inline-block;
+    background-image: url("../images/vintage-books.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav.top-nav {
@@ -80,7 +85,6 @@ div.books-search {
 
 div.container {
     width: 100%;
-    margin-top: 300px;
     padding: 25px 0px 25px 0px;
     text-align: center;
 }
@@ -88,6 +92,7 @@ div.container {
 div.books-group {
     display: inline-block;
     margin-right: 15px;
+	margin-bottom: 7px;
 }
 
 .tipes-control {
@@ -140,7 +145,7 @@ div.articles-container article {
     border-radius: 10px;
     padding: 20px 20px 0px 20px;
     background-color: #fafafa;
-    
+	margin-bottom: 10px;
 }
 
 article img.popular-books {
@@ -212,13 +217,13 @@ section.browse-collection {
     opacity: 0.8;
     text-align: center;
     width: 100%;
-    height:300px;
     background-image: url("../images/books-banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin-top: 60px;
     background-color: rgba(0, 0, 0, 0.4);
+	padding-bottom: 113px;
 }
 
 section.browse-collection h2 {
@@ -247,17 +252,23 @@ div.collection-info {
     text-align: center;
 }
 
+section.books-info-section {
+	width: 100%;
+	text-align: center;
+}
+
 section.books-info {
     display: inline-block;
     width: 32%;
     height: 200px;
-    text-align: center;;
+    text-align: center;
     margin-top:30px;
+	vertical-align: top;
 }
 
 section img.icon-one-size {
-    width: 25%;
-    height: 110px;
+	width: 78px;
+	height: 78px;
     margin-bottom: 10px;
 }
 
@@ -273,7 +284,6 @@ section.books-info p {
 
 section.feautured-book {
     margin-top: 130px;
-    height: 630px;
     text-align: center;
     background-color: #fafafa;
 }
@@ -309,20 +319,18 @@ div.best-book article {
     width: 30%;
     vertical-align: top;
     line-height: 1.5;
-    margin-top: 60px;
+    margin-top: 30px;
     text-align: left;
-    margin-right: 80px;
 }
 
 div.blog-container article {
-    width: 20%;
     display: inline-block;
     margin-left: 10px;
     padding: 20px 20px 0px 20px;  
 }
 
 img.book-front-cover{
-    width: 30%;
+    width: 333px;
     height: 431px;
     display: inline-block;
 }
@@ -331,9 +339,9 @@ button.read-more {
     margin-top: 20px;
     background-color: #313335;
     line-height: 30px;
-    width: 30%;
     border-radius: 20px;
     border: 2px solid #313335;
+	padding: 5px;
 }
 
 button.read-more:hover {
@@ -353,7 +361,6 @@ button.read-more:hover a {
 
 
 section.blog-section {
-    height: 520px;
     text-align: center;
     background-color: #fafafa;
     border-top: 2px dashed #EBEBEB;
@@ -375,15 +382,8 @@ div.blog-container {
     
 }
 
-div.blog-container article {
-    width: 20%;
-    display: inline-block;
-    margin-left: 10px;
-    padding: 20px 20px 0px 20px;  
-}
-
 article img.blog-books {
-    width: 100%;
+    width: 242px;
     height: 120px;
 }
 
@@ -402,7 +402,17 @@ article h3.blog-date {
     text-align: left;
 }
 
-article p {
+section.blog-section article p {
+    text-align: left;
+    font-weight: lighter;
+    font-size: 14px;
+    box-shadow: 0 0 black;
+    margin-top: 30px;
+    width: 243px;
+    padding-bottom: 30px;
+}
+
+section.feautured-book article p {
     text-align: left;
     font-weight: lighter;
     font-size: 14px;
@@ -412,15 +422,19 @@ article p {
 
 section.books-discount {
     width: 100%;
-    height: 230px;
     text-align: center;
-    padding-top: 88px;
+    padding-top: 30px;
+}
+
+section.books-discount img {
+    width: 100%;
 }
 
 footer {
     color:#fafafa;
     width: 100%;
-    padding: 80px 0 70px;
+    margin-top: 30px;
+    padding: 50px 0 20px;
     text-align: center;
     background: #2f2b35;
     text-transform: capitalize;
@@ -442,4 +456,34 @@ nav.bottom-nav ul li:hover a {
 footer p.copyright {
     font-size: 14px;
     margin-top: 30px;
+}
+
+@media screen and (max-width: 989px) {
+    div.best-book article {
+		width: 49%;
+    }
+	div.best-book article.image-container {
+		text-align: right;
+	}
+}
+@media screen and (max-width: 689px) {
+    div.best-book article {
+		width: 100%;
+    }
+	div.best-book article.image-container {
+		text-align: center;
+	}
+	div.best-book article {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 518px) {
+	section.books-info {
+		width: 66%;
+		vertical-align: inherit;
+	}
+	img.book-front-cover {
+    width: 300px;
+    height: 400px;
+	}
 }
