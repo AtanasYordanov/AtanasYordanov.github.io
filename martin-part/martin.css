@@ -160,3 +160,147 @@ article>figure{
     float: right;
     min-width: 340px;
 }
+
+.top-rated{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    background-color: white;
+}
+
+.top-rated>h3{
+    color: #222222;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.top-rated-product{
+    display: block;
+    margin-bottom: 20px;
+    height: 80px;
+    text-decoration: none;
+    color: #222222;
+}
+
+.top-rated-product>figure{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.top-rated-product>figure>img{
+    width: 51px;
+    height: 78px;
+    margin-right: 7px;
+}
+
+.top-rated-product>div{
+    padding: 5px;
+}
+
+.top-rated-product-name{
+    display: inline;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.stars:before{
+    font-family: FontAwesome, serif;
+    content: "\f005\f005\f005\f005\f005";
+    font-size: 1.2em;
+}
+
+.stars{
+    margin-top: 8px;
+}
+
+.top-rated-product-price{
+    display: inline;
+    margin-top: 0;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.recent-posts{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    background-color: white;
+    float: none;
+}
+
+.recent-posts>h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #222222;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.recent-posts>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recent-posts>ul>li{
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.recent-posts>ul>li>a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 1.2em;
+}
+
+.recent-posts>ul>li>a:hover{
+    color: #a7bad5;
+}
+
+.categories{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    background-color: white;
+    float: none;
+}
+
+.categories>h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #222222;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.categories>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categories>ul>li{
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.categories>ul>li>a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+.categories>ul>li>a:hover{
+    color: #a7bad5;
+}
