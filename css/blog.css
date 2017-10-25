@@ -111,6 +111,7 @@ button.btn:hover {
 .articles {
     display: inline-block;
     width: 68%;
+    text-align: justify;
 }
 
 #main-blog > div > div > article {
@@ -119,7 +120,7 @@ button.btn:hover {
     margin-bottom: 30px;
     background-color: white;
     display: block;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 5% 5% 2% 5%;
     box-sizing: border-box;
 }
@@ -127,7 +128,6 @@ button.btn:hover {
 article > time {
     color: #a7a7a7;
 }
-
 article > h2 {
     margin: 0 0 5px;
     padding: 0;
@@ -146,13 +146,14 @@ article > h2 {
 }
 
 article > figure {
-    margin: 0;
-    margin-top: 35px;
+    margin: 30px 0;
     background: #f5f5f5;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 8px;
 }
-
+article > figure img{
+    border-radius: 8px;
+}
 .article-image {
     width: 100%;
 }
