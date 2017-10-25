@@ -6,17 +6,20 @@
         <title>Book Store</title>
         <link rel="stylesheet" href="css/front-page-styles.css" />
         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+        <script type="text/javascript" src="js/script.js"></script>
+
     </head>
     <body>
         <div class="header-background">
             <nav class="top-nav">
                 <p class="brand">Book's Gate &trade;</p>
-                <ul class="nav-primary">
-                    <li class="nav-item"><a href="#">home</a></li>
-                    <li class="nav-item"><a href="#">bookstore</a></li>
-                    <li class="nav-item"><a href="#">blog</a></li>
-                    <li class="nav-item"><a href="#">my account</a></li>
-                    <li class="nav-item"><a href="#">contact</a></li>
+                <ul id="nav-primary" class="nav-primary">
+				    <li class="icon"><a href="javascript:void(0);" style="font-size:30px;" onclick="myFunction()">&#9776;</a></li>
+                    <li class="nav-item"><a href="index.html">home</a></li>
+                    <li class="nav-item"><a href="anna-karenina.html">bookstore</a></li>
+                    <li class="nav-item"><a href="blog.html">blog</a></li>
+                    <li class="nav-item"><a href="login.html">my account</a></li>
+                    <li class="nav-item"><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
             <header>
@@ -40,32 +43,29 @@
                     <div class="books-group">
                         <select  name='books-tipes' class='tipes-control' >
                             <option value='0'>Book Category</option>
-                            <option class="level-0" value="drama">Drama</option>
-                            <option class="level-1" value="inspiration">&nbsp;&nbsp;&nbsp;Inspiration</option>
-                            <option class="level-1" value="love-story">&nbsp;&nbsp;&nbsp;Love Story</option>
-                            <option class="level-0" value="life-style">Life Style</option>
-                            <option class="level-1" value="business">&nbsp;&nbsp;&nbsp;Business</option>
-                            <option class="level-1" value="culture">&nbsp;&nbsp;&nbsp;Culture</option>
-                            <option class="level-0" value="science">Science</option>
+                            <option value="drama">Drama</option>
+                            <option value="inspiration">&nbsp;&nbsp;&nbsp;Inspiration</option>
+                            <option value="love-story">&nbsp;&nbsp;&nbsp;Love Story</option>
+                            <option value="life-style">Life Style</option>
+                            <option value="business">&nbsp;&nbsp;&nbsp;Business</option>
+                            <option value="culture">&nbsp;&nbsp;&nbsp;Culture</option>
+                            <option value="science">Science</option>
                         </select>
-                        <i class='select-arrow fa fa-angle-down'></i>
                     </div>
                                     
                     <div class="books-group">
-                        <select  name='book_author' id='book_author' class='tipes-control' >
+                        <select  name='book_author' id='book_author' class='tipes-control' onchange="location = this.value;">
                             <option value='0'>Book Author</option>
-                            <option class="level-0" value="tolstoy">Tolstoy</option>
-                            <option class="level-0" value="demile">Demile</option>
-                            <option class="level-0" value="tarantino">Tarantino</option>
-                            <option class="level-0" value="fitzgerald">Fitzgerald</option>
+                            <option value="anna-karenina.html">Tolstoy</option>
+                            <option value="the-cuban-affair.html">Demile</option>
+                            <option value="pulp-fiction.html">Tarantino</option>
+                            <option value="the-great-gatsby.html">Fitzgerald</option>
                         </select>
-                        <i class='select-arrow fa fa-angle-down'></i>
                     </div>
                                 
                     <div class="books-group">
                         <input type="hidden" name="post_type" value="product" />
-                        <button type="submit" class="btn btn-primary btn-block">
-                        <i class="fa fa-search"></i>
+                        <button type="submit" class="btn btn-primary ">
                             Find Book
                         </button>
                     </div>
@@ -79,32 +79,32 @@
                         <img class="popular-books" src="images/anna-karenina.jpg" />
                         <h4 class="book-name">anna karenina</h4>
                         <h5 class="book-author">tolstoy</h5>
-                        <button class="details"><a href="">details</a></button>
-                        <button class="buy"><a href="">buy</a></button>
+                        <button class="details"><a href="anna-karenina.html">details</a></button>
+                        <button class="buy"><a href="anna-karenina.html">buy</a></button>
                     </article>
 
                     <article>
                         <img class="popular-books" src="images/gatsby.jpg" />
                         <h4 class="book-name">the great gatsby</h4>
                         <h5 class="book-author">fitzgerald</h5>
-                        <button class="details"><a href="">details</a></button>
-                        <button class="buy"><a href="">buy</a></button>
+                        <button class="details"><a href="the-great-gatsby.html">details</a></button>
+                        <button class="buy"><a href="the-great-gatsby.html">buy</a></button>
                     </article>
 
                     <article>
                         <img class="popular-books" src="images/pulp-fiction.jpg" />
                         <h4 class="book-name">pulp fiction</h4>
                         <h5 class="book-author">tarantino</h5>
-                        <button class="details"><a href="">details</a></button>
-                        <button class="buy"><a href="">buy</a></button>
+                        <button class="details"><a href="pulp-fiction.html">details</a></button>
+                        <button class="buy"><a href="pulp-fiction.html">buy</a></button>
                     </article>
 
                     <article>
                         <img class="popular-books" src="images/the-cuban-affair.jpg" />
                         <h4 class="book-name">the cuban affair</h4>
                         <h5 class="book-author">demile</h5>
-                        <button class="details"><a href="">details</a></button>
-                        <button class="buy"><a href="">buy</a></button>
+                        <button class="details"><a href="the-cuban-affair.html">details</a></button>
+                        <button class="buy"><a href="the-cuban-affair.html">buy</a></button>
                     </article>
                 </div>
     
@@ -155,7 +155,7 @@
                                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </p>
-                                <button class="read-more"><a>read more</a></button>
+                                <button class="read-more"><a href="the-great-gatsby.html">read more</a></button>
                             </article>
 							<article class="image-container">
 								<img class="book-front-cover" src="images/best-book.jpg" />
@@ -168,7 +168,7 @@
                     <div class="blog-container">
                         <article>
                             <img class="blog-books" src="images/books.jpg" />
-                            <h2 class="blog-theme"><a href="#">bloging tips and how you</a></h2>
+                            <h2 class="blog-theme"><a href="blog.html">bloging tips and how you</a></h2>
                             <h3 class="blog-date">june 17, 2017</h3>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ....
                             </p>
@@ -176,7 +176,7 @@
     
                         <article>
                             <img class="blog-books" src="images/lap-books.jpg" />
-                            <h2 class="blog-theme"><a href="#">bloging tips and how you</a></h2>
+                            <h2 class="blog-theme"><a href="blog.html">bloging tips and how you</a></h2>
                             <h3 class="blog-date">july 23, 2017</h3>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ....
                             </p>
@@ -184,7 +184,7 @@
     
                         <article>
                             <img class="blog-books" src="images/books.png" />
-                            <h2 class="blog-theme"><a href="#">bloging tips and how you</a></h2>
+                            <h2 class="blog-theme"><a href="blog.html">bloging tips and how you</a></h2>
                             <h3 class="blog-date">august 24, 2017</h3>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ....
                             </p>
@@ -192,7 +192,7 @@
     
                         <article>
                             <img class="blog-books" src="images/books-blog.jpg" />
-                            <h2 class="blog-theme"><a href="#">bloging tips and how you</a></h2>
+                            <h2 class="blog-theme"><a href="blog.html">bloging tips and how you</a></h2>
                             <h3 class="blog-date">october 30, 2017</h3>
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ....
                             </p>
@@ -210,11 +210,11 @@
         <footer>
             <nav class="bottom-nav">
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">bookstore</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">my account</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="anna-karenina.html">bookstore</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="login.html">my account</a></li>
+                    <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
             <p class= "copyright">istanbul team © 2017</p>
