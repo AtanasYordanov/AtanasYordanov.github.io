@@ -10,6 +10,7 @@ body {
     width: 100%;
     background-color: #B8D0D4;
     font-family: 'Montserrat', serif;
+    font-size: 16px;
 }
 
 main {
@@ -356,7 +357,7 @@ main {
 
     main {
         font-size: 22px;
-        width: 99%;
+        width: 97%;
         padding: 3%;
     }
 

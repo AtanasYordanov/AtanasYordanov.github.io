@@ -4,10 +4,31 @@
 <head>
     <meta charset="utf-8" />
     <title>contact</title>
-    <link rel="stylesheet" type="text/css" href="contact.css"/>
+    <link rel="stylesheet" href="css/header-and-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <h1>ContactForm</h1>
+<div class="header-background">
+    <nav class="top-nav">
+        <p class="brand">Book's Gate &trade;</p>
+        <ul class="nav-primary">
+            <li class="nav-item"><a href="#">home</a></li>
+            <li class="nav-item"><a href="#">bookstore</a></li>
+            <li class="nav-item"><a href="#">blog</a></li>
+            <li class="nav-item"><a href="#">my account</a></li>
+            <li class="nav-item"><a href="#">contact</a></li>
+        </ul>
+    </nav>
+</div>
+<section class="blog-name-page">
+    <h1>Contact</h1>
+    <p>
+        <a href="#">Home</a>
+        / Contact
+    </p>
+</section>
+   <main>
     <div class="container">
         <form id="contact" action="#">
             <label>
@@ -19,12 +40,11 @@
                 <input type="text" placeholder="Your last name">
             </label>
             <label>
-                <span>Your Email</span>
+                <span>Email</span>
                 <input type="email" placeholder="Your Email Address">
             </label>
             <label>
                 <span>Country</span>
-            </label>
                 <select>
                     <option value="1">EU</option>
                     <option value="2">USA</option>
@@ -32,7 +52,7 @@
                     <option value="4">Japan</option>
                     <option value="5">Other Countries</option>
                 </select>
-             
+            </label>
             <label>
                 <span>Message</span>
                 <textarea placeholder="Write something.."></textarea>
@@ -40,5 +60,18 @@
             </label>
         </form>
     </div>
+   </main>
+    <footer>
+        <nav class="bottom-nav">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">bookstore</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">my account</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <p class= "copyright">istanbul team © 2017</p>
+    </footer>
 </body>
 </html>

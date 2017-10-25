@@ -4,28 +4,59 @@
 <head>
     <meta charset="utf-8" />
     <title>login</title>
-    <link rel="stylesheet" type="text/css" href="login new.css" />
+    <link rel="stylesheet" href="css/header-and-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<div class="header-background">
+    <nav class="top-nav">
+        <p class="brand">Book's Gate &trade;</p>
+        <ul class="nav-primary">
+            <li class="nav-item"><a href="#">home</a></li>
+            <li class="nav-item"><a href="#">bookstore</a></li>
+            <li class="nav-item"><a href="#">blog</a></li>
+            <li class="nav-item"><a href="#">my account</a></li>
+            <li class="nav-item"><a href="#">contact</a></li>
+        </ul>
+    </nav>
+</div>
+<section class="blog-name-page">
+    <h1>My Account</h1>
+    <p>
+        <a href="#">Home</a>
+        / My Account
+    </p>
+</section>
+<main>
     <form action="#">
         <div class="first">
             <label>
-                <b>Username</b>  
                 <input type="text" placeholder="Enter Username" />
             </label>
 
             <label>
-                 <b>Password</b> 
                  <input type="password" placeholder="Enter Password" />
             </label>
-
+            <label class="checkbox">
+                <input type="checkbox" />
+                <span>Remember me</span>
+            </label>
             <button type="submit">Login</button>
-            <input type="checkbox" /> Remember me
-        </div>
-        <div class=" second">
-            <button type="button" class="three">Cancel</button>
-            <span><a href="#">Forgot password</a></span>
         </div>
     </form>
+</main>
+<footer>
+    <nav class="bottom-nav">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">bookstore</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">my account</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    <p class= "copyright">istanbul team © 2017</p>
+</footer>
 </body>
 </html>
