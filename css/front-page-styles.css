@@ -1,3 +1,6 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i');
+
 * {
     margin: 0;
     padding: 0;
@@ -108,6 +111,7 @@ button.btn {
     padding: 5px;
     width: 265px;
     border-radius: 20px;
+    outline: none;
     border: none;
     background-color: #313335;
     color:#fafafa;
@@ -118,7 +122,9 @@ button.btn:hover {
     opacity: 0.8;
     cursor: pointer;  
 }
-
+button.btn i {
+    margin-right: 10px;
+}
 section.main-books {
     text-align: center;
 }

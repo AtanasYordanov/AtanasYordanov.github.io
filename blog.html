@@ -8,6 +8,7 @@
     <title>Blog | Title</title>
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/header-and-footer.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 <body id="blog">
 
@@ -30,36 +31,46 @@
         / Blog
     </p>
 </section>
+<div class="books-search">
+    <div class="container">
+        <div class="books-group">
+            <input name="s" value="" type="text" class="tipes-control" id="keyword" placeholder="Book Title">
+        </div>
 
-<div class="blog-search">
-    <form method="post">
-        <input type="text" placeholder="Book Title">
+        <div class="books-group">
+            <select  name='books-tipes' class='tipes-control' >
+                <option value='0'>Book Category</option>
+                <option class="level-0" value="drama">Drama</option>
+                <option class="level-1" value="inspiration">&nbsp;&nbsp;&nbsp;Inspiration</option>
+                <option class="level-1" value="love-story">&nbsp;&nbsp;&nbsp;Love Story</option>
+                <option class="level-0" value="life-style">Life Style</option>
+                <option class="level-1" value="business">&nbsp;&nbsp;&nbsp;Business</option>
+                <option class="level-1" value="culture">&nbsp;&nbsp;&nbsp;Culture</option>
+                <option class="level-0" value="science">Science</option>
+            </select>
+            <i class='select-arrow fa fa-angle-down'></i>
+        </div>
 
-        <select name="category" id="category">
-            <option value="">Book Category</option>
-            <optgroup label="Drama">
-                <option value="Inspiration">Inspiration</option>
-                <option value="Love story">Love story</option>
-            </optgroup>
-            <optgroup label="Drama">
-                <option value="Business">Business</option>
-                <option value="Culture">Culture</option>
-            </optgroup>
-            <option value="Science">Science</option>
-        </select>
+        <div class="books-group">
+            <select  name='book_author' id='book_author' class='tipes-control' >
+                <option value='0'>Book Author</option>
+                <option class="level-0" value="tolstoy">Tolstoy</option>
+                <option class="level-0" value="demile">Demile</option>
+                <option class="level-0" value="tarantino">Tarantino</option>
+                <option class="level-0" value="fitzgerald">Fitzgerald</option>
+            </select>
+            <i class='select-arrow fa fa-angle-down'></i>
+        </div>
 
-        <select name="author" id="author">
-            <option value="">Book Author</option>
-            <option value="Atkia">Atkia</option>
-        </select>
-
-        <button class="btn-find-book">
-            Find book
-        </button>
-    </form>
+        <div class="books-group">
+            <input type="hidden" name="post_type" value="product" />
+            <button type="submit" class="btn btn-primary btn-block">
+                <i class="fa fa-search"></i> &nbsp;
+                Find Book
+            </button>
+        </div>
+    </div>
 </div>
-
-
 <main id="main-blog">
     <div class="container">
         <div class="articles">
