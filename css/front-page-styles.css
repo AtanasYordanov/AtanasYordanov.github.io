@@ -61,6 +61,10 @@ nav ul.nav-primary li:hover {
     cursor: pointer;
     border-bottom: 2px solid #70e9ff;   
 }
+
+nav ul.nav-primary li.icon {
+  display: none;
+}
  
 header {
     text-align: center;
@@ -476,6 +480,34 @@ footer p.copyright {
 		text-align: right;
 	}
 }
+
+@media screen and (max-width: 768px) {
+  nav ul.nav-primary {margin-right: 0;width: 100%;}
+  nav ul.nav-primary li.nav-item {display: none;}
+  nav ul.nav-primary li.icon {
+	text-align: left;
+    display: block;
+	padding-left: 91px;
+  }
+  nav ul.nav-primary li {  
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul.nav-primary.responsive li.nav-item {
+    float: none;
+    display: block;
+    text-align: left;
+	padding-left: 91px;
+  }
+  nav ul.nav-primary.responsive li.nav-item:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #70e9ff;   
+    border-top: 2px solid #70e9ff;   
+  }
+}
+
 @media screen and (max-width: 689px) {
     div.best-book article {
 		width: 100%;
@@ -487,6 +519,7 @@ footer p.copyright {
 		text-align: center;
 	}
 }
+
 @media screen and (max-width: 518px) {
 	section.books-info {
 		width: 66%;
