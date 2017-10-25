@@ -7,31 +7,38 @@
     <link rel="stylesheet" type="text/css" href="contact.css"/>
 </head>
 <body>
+    <h1>ContactForm</h1>
     <div class="container">
-        <form id="contact" action="" method="post">
-            <h3>Quick Contact</h3>
-            <h4>Contact us today, and get reply with in 24 hours!</h4>
-            <fieldset>
-                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Your Email Address" type="email" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-            </fieldset>
-            <fieldset>
-                <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-            </fieldset>
-            <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-            </fieldset>
+        <form id="contact" action="#">
+            <label>
+                <span>First Name</span>
+                <input type="text" placeholder="Your name">
+            </label>
+            <label>
+                <span>Last Name</span>
+                <input type="text" placeholder="Your last name">
+            </label>
+            <label>
+                <span>Your Email</span>
+                <input type="email" placeholder="Your Email Address">
+            </label>
+            <label>
+                <span>Country</span>
+            </label>
+                <select>
+                    <option value="1">EU</option>
+                    <option value="2">USA</option>
+                    <option value="3">Australia</option>
+                    <option value="4">Japan</option>
+                    <option value="5">Other Countries</option>
+                </select>
+             
+            <label>
+                <span>Message</span>
+                <textarea placeholder="Write something.."></textarea>
+                <input type="submit" value="Submit">
+            </label>
         </form>
-
-
     </div>
 </body>
 </html>
