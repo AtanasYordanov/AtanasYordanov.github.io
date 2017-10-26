@@ -184,7 +184,7 @@ article h5.book-author {
     color: #c4cad3;
 }
 
-article button.details {
+article a.details {
     background: none;
     border: 1px solid lightgray;
     border-bottom-left-radius: 20px;
@@ -194,9 +194,10 @@ article button.details {
     margin-bottom: 10px;
     text-transform: uppercase;
     cursor: pointer;
+    display: inline-block;
 }
 
-article button.buy {
+article a.buy {
     background: none;
     border: 1px solid lightgray;
     border-bottom-right-radius: 20px;
@@ -207,23 +208,18 @@ article button.buy {
     margin-bottom: 10px;
     text-transform: uppercase;
     cursor: pointer;
+    display: inline-block;
 }
 
-article button.buy:hover {
+article a.buy:hover {
     background-color: #a0aaba;
     cursor: pointer;
-}
-
-article button.details:hover {
-    background-color: #a0aaba;
-    cursor: pointer;
-}
-
-article button.buy:hover a {
     color: #ffffff;
 }
 
-article button.details:hover a {
+article a.details:hover {
+    background-color: #a0aaba;
+    cursor: pointer;
     color: #ffffff;
 }
 
@@ -349,27 +345,26 @@ img.book-front-cover {
     display: inline-block;
 }
 
-button.read-more {
+a.read-more {
+    font-size: 14px;
+    color:#5A5462;
+    text-transform: uppercase;
+    display: inline-block;
     margin-top: 20px;
-    background-color: #313335;
+    background: none;
     line-height: 30px;
     outline: none;
     border-radius: 25px;
     border: 2px solid #313335;
     padding: 5px;
     width: 150px;
+    text-align: center;
 }
 
-button.read-more:hover {
-    background-color: #5A5462;
-    cursor: pointer;
-    border: 2px solid #5A5462;
-}
-
-button.read-more a {
-    font-size: 14px;
+a.read-more:hover {
     color: #fafafa;
-    text-transform: uppercase;
+    cursor: pointer;
+    background-color:#5A5462;
 }
 
 section.blog-section {
@@ -484,6 +479,7 @@ footer p.copyright {
     nav ul.nav-primary {
         margin-right: 0;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     nav ul.nav-primary li.nav-item {
@@ -502,6 +498,12 @@ footer p.copyright {
 }
 
 @media screen and (max-width: 768px) {
+    .header-background > .top-nav > p.brand {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
     .header-background > .top-nav > p.brand {
         text-align: center;
         display: block;
