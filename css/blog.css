@@ -125,7 +125,7 @@ button.btn:hover {
     box-sizing: border-box;
 }
 
-article > time {
+article > span {
     color: #a7a7a7;
 }
 article > h2 {
@@ -333,5 +333,8 @@ article > figure img{
         display:block;
         width: 97%;
         margin: 0 auto;
+    }
+    .articles h2{
+        text-align: left;
     }
 }

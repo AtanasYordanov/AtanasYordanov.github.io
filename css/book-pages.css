@@ -15,9 +15,9 @@ body {
 
 main {
     font-size: 23px;
-    margin: 100px auto;
+    margin: 5% auto;
     width: 97%;
-    max-width: 1300px;
+    max-width: 1150px;
     border-radius: 20px;
     box-sizing: border-box;
     padding: 3.5%;
@@ -165,14 +165,11 @@ main {
     letter-spacing: 1px;
     line-height: 3em;
     outline: none;
-    transition: text-shadow 0.7s, box-shadow 0.7s;
 }
 
 .buy-box form button:hover {
     cursor: pointer;
-    box-shadow: 0 0 5px 5px gray;
-    text-shadow: 0 0 10px #fff;
-    color: lightgray;
+    background-color: #5A5462;
 }
 
 .about-the-book {
