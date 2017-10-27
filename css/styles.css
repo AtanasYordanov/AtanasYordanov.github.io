@@ -36,6 +36,7 @@ nav p.brand {
     display: inline-block;
     font-size: 25px;
     margin-left: 90px;
+    text-shadow: 0 0 8px #3C3F41;
     cursor: pointer;
 }
 
@@ -54,6 +55,7 @@ nav ul.nav-primary li {
 
 nav ul.nav-primary li a {
     text-decoration: none;
+    text-shadow: 0 0 8px #3C3F41;
     color: #ffffff;
 }
 
@@ -73,16 +75,17 @@ header {
 h1.header-title {
     text-transform: capitalize;
     font-weight: 100;
-    margin-top: 210px;
-    margin-bottom: 15px;
+    margin: 210px 15px 15px 15px;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 42px;
+    text-shadow: 0 0 8px #3C3F41;
 }
 
 h3.header-subtitle {
     text-align: center;
     font-weight: 100;
     color: #ffffff;
+    text-shadow: 0 0 8px #3C3F41;
 }
 
 div.books-search {
@@ -99,12 +102,14 @@ div.container {
 div.books-group {
     display: inline-block;
     margin-right: 15px;
+    max-width: 95%;
     margin-bottom: 7px;
 }
 
 .tipes-control {
     padding: 5px;
     width: 265px;
+    max-width: 90%;
     border-radius: 5px;
     border: none;
     background: #eaf1fc;
@@ -114,6 +119,7 @@ div.books-group {
 button.btn {
     padding: 5px;
     width: 265px;
+    max-width: 90%;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -489,11 +495,25 @@ footer p.copyright {
     nav ul.nav-primary li.icon {
         text-align: left;
         display: block;
-        padding-left: 91px;
+        padding-left: 10%;
     }
 
     nav ul.nav-primary li {
         margin-right: 0;
+    }
+    div.header-background {
+        height: auto;
+        background: #2F2B35;
+    }
+    h1.header-title {
+        margin-top: 60px;
+        font-size: 38px;
+    }
+    h3.header-subtitle {
+    margin-bottom: 20px;
+    }
+    nav ul.nav-primary li {
+        padding: 12px 0;
     }
 }
 
@@ -509,14 +529,12 @@ footer p.copyright {
         display: block;
         margin: 0 auto;
     }
-
     nav ul.nav-primary.responsive li.nav-item {
         float: none;
         display: block;
         text-align: left;
-        padding-left: 91px;
+        padding-left: 25%;
     }
-
     nav ul.nav-primary.responsive li.nav-item:hover {
         cursor: pointer;
         border-bottom: 2px solid #70e9ff;
